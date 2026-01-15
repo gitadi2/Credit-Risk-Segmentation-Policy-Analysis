@@ -1,42 +1,43 @@
-***  Credit Risk Segmentation & Loan Policy Impact Analysis ***
+# Credit Risk Segmentation & Policy Impact Analysis #
 
-##  Overview
-This project analyzes loan applicant data to assess credit risk, segment customers into Low, Medium, and High Risk groups, and evaluate the impact of a risk-based loan approval policy. The goal is to reduce default risk while maintaining a high approval rate.
+## Overview
+This project analyzes loan application data to assess credit risk and evaluate the impact of approval policies. The focus is on creating explainable risk segments, validating data quality using SQL, and translating insights into business decisions through dashboards.
+
+The project is designed to reflect real-world banking and fintech analytics workflows rather than purely academic modeling.
 
 
+## Objective
+- Segment loan applicants based on credit risk
+- Design a practical approval policy
+- Measure the impact of the policy on approval and default rates
 
-##  Tools Used
-- Python (Pandas, NumPy)
-- Jupyter Notebook
+
+## Tools & Technologies
+- Python (Pandas, NumPy, Scikit-learn)
+- SQL (PostgreSQL)
 - Power BI
-- GitHub
+- Jupyter Notebook
+
+
+## Key Work Done
+- Cleaned and validated loan data to ensure accuracy and consistency
+- Engineered risk-related features such as loan-to-income ratio, credit score bands, and debt-to-income metrics
+- Implemented SQL-based data quality checks using staging and final tables
+- Designed a rule-based credit risk segmentation framework
+- Evaluated an approval policy by comparing approval and default rates before and after policy application
+- Built an interactive Power BI dashboard to communicate insights clearly to stakeholders
+
+
+## Data Note
+Due to file size constraints, raw and processed datasets are not included in this repository.The analysis pipeline assumes access to the original loan dataset and
+reproduces all results through documented preprocessing, SQL validation, and feature engineering steps.
+
+## Outcome
+The analysis provides a clear understanding of applicant risk distribution and demonstrates how data-driven policies can reduce default risk while maintaining approval coverage. The dashboard enables easy interpretation of risk and policy impact for business users.
+
+
+## Author
+Aditya Satapathy
 
 
 
-##  Methodology
-- Cleaned and prepared financial and credit data
-- Engineered features such as Loan-to-Income Ratio and Credit Score Bands
-- Built a weighted risk scoring model using affordability and credit metrics
-- Segmented applicants into risk categories and validated using default rates
-- Simulated a risk-based loan approval policy and measured business impact
-
-
-
-##  Power BI Dashboard
-An interactive Power BI dashboard was created to visualize:
-- Approval Rate
-- Baseline vs Policy Default Rates
-- Risk Reduction
-- Customer Distribution by Risk Segment
-- Approval Comparison (Baseline vs Policy)
-
-
-## Key Results
-- Approval Rate (After Policy): ~88.9%
-- Default Rate Reduction: ~3%
-- Default rates increase consistently from Low to High Risk
-
-
-
-## Conclusion
-This project demonstrates an end-to-end credit risk analytics workflow combining data analysis, risk segmentation, policy simulation, and business-focused visualization, similar to real-world banking and finance use cases.
